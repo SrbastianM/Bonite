@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Login into Bon Bonite web page" skipped="0" tests="1" time="15.39" timestamp="2024-08-16 11:42:21"><testcase name="the user register on the web page"><error message="Element &lt;div class=&quot;myaccount&quot;&gt; is not clickable at point (1815,77) because another element &lt;div class=&quot;loader&quot;&gt; obscures it&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'SRTENKI', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [248f1acd-a8da-48a4-82ee-653a0db63ef1, clickElement {id=9a6e7804-c2da-484c-9a73-74ae50fb3733}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240812083845, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15844, moz:profile: C:\Users\sebas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}&#10;Element: [[FirefoxDriver: firefox on WINDOWS (248f1acd-a8da-48a4-82ee-653a0db63ef1)] -&gt; xpath: //div[@class='myaccount']]&#10;Session ID: 248f1acd-a8da-48a4-82ee-653a0db63ef1" type="org.openqa.selenium.ElementClickInterceptedException">Element &lt;div class="myaccount"&gt; is not clickable at point (1815,77) because another element &lt;div class="loader"&gt; obscures it
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SRTENKI', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [248f1acd-a8da-48a4-82ee-653a0db63ef1, clickElement {id=9a6e7804-c2da-484c-9a73-74ae50fb3733}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240812083845, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15844, moz:profile: C:\Users\sebas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on WINDOWS (248f1acd-a8da-48a4-82ee-653a0db63ef1)] -&gt; xpath: //div[@class='myaccount']]
+Session ID: 248f1acd-a8da-48a4-82ee-653a0db63ef1</error><system-err>Element &lt;div class="myaccount"&gt; is not clickable at point (1815,77) because another element &lt;div class="loader"&gt; obscures it
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SRTENKI', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [248f1acd-a8da-48a4-82ee-653a0db63ef1, clickElement {id=9a6e7804-c2da-484c-9a73-74ae50fb3733}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240812083845, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15844, moz:profile: C:\Users\sebas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on WINDOWS (248f1acd-a8da-48a4-82ee-653a0db63ef1)] -&gt; xpath: //div[@class='myaccount']]
+Session ID: 248f1acd-a8da-48a4-82ee-653a0db63ef1&#13;
+com.co.bonbonite.tasks.Home.performAs(Home.java:14)&#13;
+com.co.bonbonite.stepsdefinitions.LoginStepDefinition.theUserSelectsThePersoneIcon(LoginStepDefinition.java:40)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:57)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:95)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)&#13;
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>

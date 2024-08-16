@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/features/login.feature",
+        features = "src/test/resources/features/login.feature",
         snippets = CucumberOptions.SnippetType.UNDERSCORE,
         glue = "com.co.bonbonite.stepsdefinitions"
 )
