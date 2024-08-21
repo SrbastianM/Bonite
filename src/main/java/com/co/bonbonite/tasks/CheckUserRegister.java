@@ -10,7 +10,7 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 
 public class CheckUserRegister implements Task {
-    private Target successMessage;
+    private final Target successMessage;
 
     public CheckUserRegister(Target successMessage) {
         this.successMessage = successMessage;

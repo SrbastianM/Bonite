@@ -8,7 +8,7 @@ import net.serenitybdd.screenplay.questions.Text;
 public class ValidateRegister implements Question<String> {
     @Override
     public String answeredBy(Actor actor) {
-        return Text.of(UserPage.TXT_WELCOME_MESSAGE).answeredBy(actor).toString();
+        return Text.of(UserPage.TXT_WELCOME_MESSAGE).answeredBy(actor);
     }
 
     public static ValidateRegister compare() {

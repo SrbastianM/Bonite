@@ -18,4 +18,7 @@ public class UserPage extends PageObject {
             .the("click the belt option").locatedBy("//li[@id='menu-item-9']//a[contains(text(),'Cinturones')]");
     public static final Target LI_ACCESSORIES = Target
             .the("click the accessories option").locatedBy("//li[@id='menu-item-7']//a[contains(text(),'Accesorios')]");
+
+    public static final Target LI_WISH_LIST = Target
+            .the("Select wish list option").locatedBy("//a[contains(.,'Lista de deseos')]");
 }

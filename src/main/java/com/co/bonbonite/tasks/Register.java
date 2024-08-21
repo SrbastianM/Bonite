@@ -1,5 +1,6 @@
 package com.co.bonbonite.tasks;
 
+import com.co.bonbonite.interactions.WaitElement;
 import com.co.bonbonite.models.Credentials;
 import com.co.bonbonite.userinterfaces.LoginPage;
 import net.serenitybdd.screenplay.Actor;
@@ -21,7 +22,10 @@ public class Register implements Task {
         actor.attemptsTo(Enter.theValue(credentials.getUsername()).into(LoginPage.TXT_USERNAME));
         actor.attemptsTo(Enter.theValue(credentials.getEmail()).into(LoginPage.TXT_EMAIL));
         actor.attemptsTo(Enter.theValue(credentials.getPassword()).into(LoginPage.TXT_PASSWORD));
+        WaitElement.untilAppears(LoginPage.BTN_CHECK);
+
         actor.attemptsTo(Click.on(LoginPage.BTN_CHECK));
+        WaitElement.untilAppears(LoginPage.BTN_REGISTER);
         actor.attemptsTo(Click.on(LoginPage.BTN_REGISTER));
     }
 

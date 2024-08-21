@@ -27,6 +27,7 @@ public class Login implements Task {
         actor.attemptsTo(Enter.theValue(credentials.getUsername()).into(LoginPage.TXT_USERNAME_LOGIN));
         WaitElement.untilAppears(LoginPage.TXT_PASSWORD_LOGIN).then(Clear.field());
         actor.attemptsTo(Enter.theValue(credentials.getPassword()).into(LoginPage.TXT_PASSWORD_LOGIN));
+        actor.attemptsTo(WaitElement.untilBeEnable(LoginPage.BTN_LOGIN));
         actor.attemptsTo(Click.on(LoginPage.BTN_LOGIN));
     }
 

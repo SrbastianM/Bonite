@@ -7,10 +7,8 @@ Feature: Purchase around the application
       | 1000329111 | boniteuser@yopmail.com | 12334@Pass |
     Then the user can see the welcome message
 
-    Scenario: Purchase Shoes
+    Scenario: Add Tree Shoes to Favorites
       Given the user clicks on the shoes option
-      And the user selects the shoes
-      When the user can see the name of the shoe
-      And the user selects the size of the shoe
+      And the user can see the options to select
       When the user selects add to shop car button
-      Then the user can see the product on the shop car page
+      Then the user can see the products on the shop car page

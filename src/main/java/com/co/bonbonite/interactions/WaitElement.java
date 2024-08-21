@@ -34,7 +34,6 @@ public class WaitElement implements Interaction {
                 break;
             case "Enabled":
                 waitAs(actor).until(ExpectedConditions.elementToBeClickable(target.resolveFor(actor)));
-
         }
 
     }
@@ -56,7 +55,5 @@ public class WaitElement implements Interaction {
     public static WaitElement untilBeEnable(Target target){
         return Tasks.instrumented(WaitElement.class,target,"Enabled");
     }
-
-
 
 }
