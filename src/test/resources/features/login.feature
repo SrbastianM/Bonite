@@ -1,10 +1,10 @@
 Feature: Login into Bon Bonite web page
 
-  @registersuccesfull
-  Scenario: the user register on the web page
+
+  Scenario: the user log into Bon bonite
     Given the user can see home page
     And the user selects the person icon
     When the user enter de credentials on the register form
-      | Username      | Password       |
-      | srodriguezdev | test@MAIL12343 |
+      | username   | email                  | password   |
+      | 1000329111 | boniteuser@yopmail.com | 12334@Pass |
     Then the user can see the welcome message

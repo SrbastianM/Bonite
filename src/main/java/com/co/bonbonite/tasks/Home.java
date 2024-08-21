@@ -1,5 +1,7 @@
 package com.co.bonbonite.tasks;
 
+import com.co.bonbonite.interactions.WaitElement;
+import com.co.bonbonite.interactions.WaitElementz;
 import com.co.bonbonite.userinterfaces.HomePage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
@@ -11,6 +13,7 @@ public class Home implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+        actor.attemptsTo(WaitElement.untilAppears(HomePage.BTN_USER));
         actor.attemptsTo(Click.on(HomePage.BTN_USER));
     }
 
