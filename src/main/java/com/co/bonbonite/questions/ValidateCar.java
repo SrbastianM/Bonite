@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class ValidateCar implements Question<Boolean> {
-    private final Target product;
+    private Target product;
 
     public ValidateCar(Target product) {
         this.product = product;

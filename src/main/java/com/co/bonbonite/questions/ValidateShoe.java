@@ -12,10 +12,10 @@ public class ValidateShoe implements Question<Boolean> {
     }
 
     @Override
-
     public Boolean answeredBy(Actor actor) {
         return shoe.resolveFor(actor).isVisible();
     }
+
     public static ValidateShoe shoeIsVisible(Target shoe) {
         return new ValidateShoe(shoe);
     }

@@ -1,4 +1,4 @@
-Feature: Purchase around the application
+Feature: Purchase Products
   Background:
     Given the user can see home page
     And the user selects the person icon
@@ -7,8 +7,14 @@ Feature: Purchase around the application
       | 1000329111 | boniteuser@yopmail.com | 12334@Pass |
     Then the user can see the welcome message
 
-    Scenario: Add Tree Shoes to Favorites
-      Given the user clicks on the shoes option
-      And the user can see the options to select
-      When the user selects add to shop car button
+    Scenario: Purchase 5 products product
+      Given the user clicks on handbag option
+      When the can see the option to select
+      And the user selects purchase button
       Then the user can see the products on the shop car page
+
+    Scenario: Purchase one products
+      Given the user clicks on belt option
+      When the user can see the option to select
+      And the user selects options to purchase and select purchase button
+      Then the user can see the product on car page

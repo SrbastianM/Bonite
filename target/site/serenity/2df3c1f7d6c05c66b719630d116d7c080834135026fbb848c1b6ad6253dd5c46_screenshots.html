@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="05182e23d4adbccdc8e726e0b8b2f6dd5c3bce865241caf4257537cfd9d25eed.html">Purchase Products</a></span>
+                > <span class="truncate-60"><a
+                    href="2df3c1f7d6c05c66b719630d116d7c080834135026fbb848c1b6ad6253dd5c46.html">Purchase 5 products product </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 22-08-2024 19:36</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Purchase Products </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Purchase 5 products product
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="8068265a3c3206a76cb2e85737dccc665352d8a9063be03f60019b267fd8148b.png" title=" Given the user can see home page" width="1920"/>
+                <img src="8068265a3c3206a76cb2e85737dccc665352d8a9063be03f60019b267fd8148b.png" title=" Sebastian opens the browser at https://www.bon-bonite.com" width="1920"/>
+                <img src="24a33f0c8257f9dcb393c37088a63a389f2603cfeacb6c767d302be1548d9239.png" title=" Sebastian opens the browser at https://www.bon-bonite.com (completed)" width="1920"/>
+                <img src="24a33f0c8257f9dcb393c37088a63a389f2603cfeacb6c767d302be1548d9239.png" title=" Given the user can see home page (completed)" width="1920"/>
+                <img src="de3a22dfb708224c4cd6a634109975ed83d5bd23dacb95ad125b0e4418cf734e.png" title=" And the user selects the person icon" width="1920"/>
+                <img src="de3a22dfb708224c4cd6a634109975ed83d5bd23dacb95ad125b0e4418cf734e.png" title=" Sebastian home" width="1920"/>
+                <img src="de3a22dfb708224c4cd6a634109975ed83d5bd23dacb95ad125b0e4418cf734e.png" title=" Sebastian waits the click the icon until be Visible" width="1920"/>
+                <img src="261a98da894573fc84e8bdb9449287c2a8aa64c548e3d7c97ab1a0f286eebc25.png" title=" Sebastian waits the click the icon until be Visible (completed)" width="1920"/>
+                <img src="261a98da894573fc84e8bdb9449287c2a8aa64c548e3d7c97ab1a0f286eebc25.png" title=" Sebastian clicks on click the icon" width="1920"/>
+                <img src="d38457b680471d0601df330d22be08ad7d91381aaf163e8513de0dca54c33241.png" title=" Sebastian clicks on click the icon (completed)" width="1920"/>
+                <img src="d38457b680471d0601df330d22be08ad7d91381aaf163e8513de0dca54c33241.png" title=" Sebastian home (completed)" width="1920"/>
+                <img src="d38457b680471d0601df330d22be08ad7d91381aaf163e8513de0dca54c33241.png" title=" And the user selects the person icon (completed)" width="1920"/>
+                <img src="17d1067a416fcaaebddd88fd7cda6304c12b82a8611798634f9b4553d649f13f.png" title=" When the user enter de credentials on the register form
+| username | email | password |
+| 1000329111 | boniteuser@yopmail.com | 12334@Pass |" width="1920"/>
+                <img src="17d1067a416fcaaebddd88fd7cda6304c12b82a8611798634f9b4553d649f13f.png" title=" Sebastian register" width="1920"/>
+                <img src="17d1067a416fcaaebddd88fd7cda6304c12b82a8611798634f9b4553d649f13f.png" title=" Sebastian enters '1000329111' into enter username" width="1920"/>
+                <img src="ba657e8c067177d49c849252cc141d7fdc667d41ea731e733b5a9b308683718b.png" title=" Sebastian enters '1000329111' into enter username (completed)" width="1920"/>
+                <img src="ba657e8c067177d49c849252cc141d7fdc667d41ea731e733b5a9b308683718b.png" title=" Sebastian enters 'boniteuser@yopmail.com' into enter email" width="1920"/>
+                <img src="c858bf04a86f88a7b118823688509bdb9703c5d38627142923461450e4f6fc10.png" title=" Sebastian enters 'boniteuser@yopmail.com' into enter email (completed)" width="1920"/>
+                <img src="c858bf04a86f88a7b118823688509bdb9703c5d38627142923461450e4f6fc10.png" title=" Sebastian enters '12334@Pass' into enter password" width="1920"/>
+                <img src="4d30cb3c86354cc2f63d0aaceb5ae49a5d8cba5920c3d24de0a6da4ef5ca6114.png" title=" Sebastian enters '12334@Pass' into enter password (completed)" width="1920"/>
+                <img src="4d30cb3c86354cc2f63d0aaceb5ae49a5d8cba5920c3d24de0a6da4ef5ca6114.png" title=" Sebastian waits the click button policies until be Visible" width="1920"/>
+                <img src="4d30cb3c86354cc2f63d0aaceb5ae49a5d8cba5920c3d24de0a6da4ef5ca6114.png" title=" Sebastian waits the click button policies until be Visible (completed)" width="1920"/>
+                <img src="4d30cb3c86354cc2f63d0aaceb5ae49a5d8cba5920c3d24de0a6da4ef5ca6114.png" title=" Sebastian clicks on click button policies" width="1920"/>
+                <img src="e854806ca902292af726fc47dde45dada499a413a45d196ba5ddbc0c1dd08f82.png" title=" Sebastian clicks on click button policies (completed)" width="1920"/>
+                <img src="e854806ca902292af726fc47dde45dada499a413a45d196ba5ddbc0c1dd08f82.png" title=" Sebastian waits the select register until be Visible" width="1920"/>
+                <img src="e854806ca902292af726fc47dde45dada499a413a45d196ba5ddbc0c1dd08f82.png" title=" Sebastian waits the select register until be Visible (completed)" width="1920"/>
+                <img src="e854806ca902292af726fc47dde45dada499a413a45d196ba5ddbc0c1dd08f82.png" title=" Sebastian clicks on select register" width="1920"/>
+                <img src="200e589ef9d286ed4e8a615c733ca2a3a776c6380b2a641a34912166b6dd332b.png" title=" Sebastian clicks on select register (completed)" width="1920"/>
+                <img src="200e589ef9d286ed4e8a615c733ca2a3a776c6380b2a641a34912166b6dd332b.png" title=" Sebastian register (completed)" width="1920"/>
+                <img src="200e589ef9d286ed4e8a615c733ca2a3a776c6380b2a641a34912166b6dd332b.png" title=" Sebastian check user register" width="1920"/>
+                <img src="200e589ef9d286ed4e8a615c733ca2a3a776c6380b2a641a34912166b6dd332b.png" title=" Sebastian waits the user is registered on the web page until be Visible" width="1920"/>
+                <img src="28943589442f3aeeaee456138e30ff9a8674cf36dba96b8dd303e5910f4b61b2.png" title=" Sebastian waits the user is registered on the web page until be Visible (completed)" width="1920"/>
+                <img src="28943589442f3aeeaee456138e30ff9a8674cf36dba96b8dd303e5910f4b61b2.png" title=" Sebastian check user register (completed)" width="1920"/>
+                <img src="3c988735a5263855fbf4f7883a4d55ab8a52fea3cacb491e69cdd0954539406f.png" title=" Sebastian login" width="1920"/>
+                <img src="3c988735a5263855fbf4f7883a4d55ab8a52fea3cacb491e69cdd0954539406f.png" title=" Sebastian enters '1000329111' into enter username into login field" width="1920"/>
+                <img src="d32e346db7cb4f764c6610146ceca11e037a66b32f581cca5143ed311018910f.png" title=" Sebastian enters '1000329111' into enter username into login field (completed)" width="1920"/>
+                <img src="d32e346db7cb4f764c6610146ceca11e037a66b32f581cca5143ed311018910f.png" title=" Sebastian waits the enter password into login field until be Visible" width="1920"/>
+                <img src="125546848e2c3a361d134b468ad4d995e9494dc57d4ac270d0e4fa8281c56947.png" title=" Sebastian waits the enter password into login field until be Visible (completed)" width="1920"/>
+                <img src="125546848e2c3a361d134b468ad4d995e9494dc57d4ac270d0e4fa8281c56947.png" title=" Sebastian enters '12334@Pass' into enter password into login field" width="1920"/>
+                <img src="8d0c8a31c9ca5f23ac067283b3bd0da7740fcddf336b5672984e86d299ebab0d.png" title=" Sebastian enters '12334@Pass' into enter password into login field (completed)" width="1920"/>
+                <img src="8d0c8a31c9ca5f23ac067283b3bd0da7740fcddf336b5672984e86d299ebab0d.png" title=" Sebastian waits the select button login until be Enabled" width="1920"/>
+                <img src="8d0c8a31c9ca5f23ac067283b3bd0da7740fcddf336b5672984e86d299ebab0d.png" title=" Sebastian waits the select button login until be Enabled (completed)" width="1920"/>
+                <img src="8d0c8a31c9ca5f23ac067283b3bd0da7740fcddf336b5672984e86d299ebab0d.png" title=" Sebastian clicks on select button login" width="1920"/>
+                <img src="9772e8b073904b13c9de54c70eec0f892d8c325925c46bc7b7d43e647e6f16d8.png" title=" Sebastian clicks on select button login (completed)" width="1920"/>
+                <img src="9772e8b073904b13c9de54c70eec0f892d8c325925c46bc7b7d43e647e6f16d8.png" title=" Sebastian login (completed)" width="1920"/>
+                <img src="9772e8b073904b13c9de54c70eec0f892d8c325925c46bc7b7d43e647e6f16d8.png" title=" When the user enter de credentials on the register form
+| username | email | password |
+| 1000329111 | boniteuser@yopmail.com | 12334@Pass | (completed)" width="1920"/>
+                <img src="bc13acda0c3cec98d15b93e3d6cb186f522a151377d3769db227a7b85b7236fe.png" title=" Then the user can see the welcome message" width="1920"/>
+                <img src="bc13acda0c3cec98d15b93e3d6cb186f522a151377d3769db227a7b85b7236fe.png" title=" Then validate register" width="1920"/>
+                <img src="bc13acda0c3cec98d15b93e3d6cb186f522a151377d3769db227a7b85b7236fe.png" title=" Then validate register (completed)" width="1920"/>
+                <img src="c121422ccbd5f2d582c8aeabf9abb3cc84e5df0b28d508302d585ed692e3d219.png" title=" Then the user can see the welcome message (completed)" width="1920"/>
+                <img src="1a59c0275478039988ebe00e2272c26c6a10d680fe45d23ca8e303b6184411c3.png" title=" Given the user clicks on handbag option" width="1920"/>
+                <img src="1a59c0275478039988ebe00e2272c26c6a10d680fe45d23ca8e303b6184411c3.png" title=" Sebastian accept cookie" width="1920"/>
+                <img src="1a59c0275478039988ebe00e2272c26c6a10d680fe45d23ca8e303b6184411c3.png" title=" Sebastian clicks on accept cookies" width="1920"/>
+                <img src="1a59c0275478039988ebe00e2272c26c6a10d680fe45d23ca8e303b6184411c3.png" title=" Sebastian accept cookie (completed)" width="1920"/>
+                <img src="1a59c0275478039988ebe00e2272c26c6a10d680fe45d23ca8e303b6184411c3.png" title=" Sebastian click hangbag option" width="1920"/>
+                <img src="1a59c0275478039988ebe00e2272c26c6a10d680fe45d23ca8e303b6184411c3.png" title=" Sebastian waits the click the bag option until be Enabled" width="1920"/>
+                <img src="1a59c0275478039988ebe00e2272c26c6a10d680fe45d23ca8e303b6184411c3.png" title=" Sebastian waits the click the bag option until be Enabled (completed)" width="1920"/>
+                <img src="1a59c0275478039988ebe00e2272c26c6a10d680fe45d23ca8e303b6184411c3.png" title=" Sebastian clicks on click the bag option" width="1920"/>
+                <img src="426072d51465a734721cab934d261865fa8597db7e3aa9612b446b86f1399349.png" title=" Sebastian clicks on click the bag option (completed)" width="1920"/>
+                <img src="426072d51465a734721cab934d261865fa8597db7e3aa9612b446b86f1399349.png" title=" Sebastian waits the click the bag option until be Visible" width="1920"/>
+                <img src="557898c0898ff62c07cb1080751f3120902e0cf86c618551ff6760f8209795a0.png" title=" Sebastian waits the click the bag option until be Visible (completed)" width="1920"/>
+                <img src="557898c0898ff62c07cb1080751f3120902e0cf86c618551ff6760f8209795a0.png" title=" Sebastian click hangbag option (completed)" width="1920"/>
+                <img src="557898c0898ff62c07cb1080751f3120902e0cf86c618551ff6760f8209795a0.png" title=" Given the user clicks on handbag option (completed)" width="1920"/>
+                <img src="2b1d7525f0980c03ce737c9cce6f583e1cee12dff8547655c955b628d63a5fcc.png" title=" When the can see the option to select" width="1920"/>
+                <img src="2b1d7525f0980c03ce737c9cce6f583e1cee12dff8547655c955b628d63a5fcc.png" title=" Then validate shoe" width="1920"/>
+                <img src="2b1d7525f0980c03ce737c9cce6f583e1cee12dff8547655c955b628d63a5fcc.png" title=" When the can see the option to select (completed)" width="1920"/>
+                <img src="9d891e98486d18398dc7e946988be95a7f8679b06b1edde2190221eb3d67f8ab.png" title=" And the user selects purchase button" width="1920"/>
+                <img src="9d891e98486d18398dc7e946988be95a7f8679b06b1edde2190221eb3d67f8ab.png" title=" Sebastian add handbag to shop car" width="1920"/>
+                <img src="9d891e98486d18398dc7e946988be95a7f8679b06b1edde2190221eb3d67f8ab.png" title=" Sebastian clicks on click purchase button" width="1920"/>
+                <img src="bb363166d6bd51f31873da62d78225fb34a1b85ae092bc0b4a4579285e5e0a76.png" title=" Sebastian clicks on click purchase button (completed)" width="1920"/>
+                <img src="e76ceab790152a661f45113bdaebf0b96e3367a5a1e0db3c4e123cd237e579db.png" title=" Sebastian clicks on click purchase button" width="1920"/>
+                <img src="9a9aae843d37793567e26d51f473e3d95779bbd1fb8444b677a88943f4abcacf.png" title=" Sebastian clicks on click purchase button (completed)" width="1920"/>
+                <img src="f3d46362860f174616c9bf37f1998d171d73e325da695f9ceb21e2d5c12338d6.png" title=" Sebastian clicks on click purchase button" width="1920"/>
+                <img src="253be97b233981704ccf80c78d177757dc5b29c41d59966346b6d454f0094251.png" title=" Sebastian clicks on click purchase button (completed)" width="1920"/>
+                <img src="bd5235b5f6880df389f0b998d429583b83d64f247525c779a22ecc905a77fc78.png" title=" Sebastian clicks on click purchase button" width="1920"/>
+                <img src="08bf26b1c7dfc99073a7d228df23371de63d7dded16d4f8e9d00a1b378e58fb6.png" title=" Sebastian clicks on click purchase button (completed)" width="1920"/>
+                <img src="aa553a5ace9d6eb487c3fcdc5413578b499b88ad4d82f014783214849aeace9f.png" title=" Sebastian clicks on click purchase button" width="1920"/>
+                <img src="edf1eac36c2542f34fcbd08b18ab8e5cb92acf7f0bb63ac93939fb6616a8a9cc.png" title=" Sebastian clicks on click purchase button (completed)" width="1920"/>
+                <img src="edf1eac36c2542f34fcbd08b18ab8e5cb92acf7f0bb63ac93939fb6616a8a9cc.png" title=" Sebastian add handbag to shop car (completed)" width="1920"/>
+                <img src="edf1eac36c2542f34fcbd08b18ab8e5cb92acf7f0bb63ac93939fb6616a8a9cc.png" title=" And the user selects purchase button (completed)" width="1920"/>
+                <img src="78074b7234a99db7996be8bc93efa872d3e975ef8738a718999aa3d7cf701383.png" title=" Then the user can see the products on the shop car page" width="1920"/>
+                <img src="78074b7234a99db7996be8bc93efa872d3e975ef8738a718999aa3d7cf701383.png" title=" Sebastian see shop car" width="1920"/>
+                <img src="78074b7234a99db7996be8bc93efa872d3e975ef8738a718999aa3d7cf701383.png" title=" Sebastian clicks on click on car icon" width="1920"/>
+                <img src="68b2e562e64f9f8e174b7d4f42a610c9022f0666720eca5831c8a6113c8416f6.png" title=" Sebastian clicks on click on car icon (completed)" width="1920"/>
+                <img src="68b2e562e64f9f8e174b7d4f42a610c9022f0666720eca5831c8a6113c8416f6.png" title=" Sebastian see shop car (completed)" width="1920"/>
+                <img src="68b2e562e64f9f8e174b7d4f42a610c9022f0666720eca5831c8a6113c8416f6.png" title=" Then validate shop car" width="1920"/>
+                <img src="68b2e562e64f9f8e174b7d4f42a610c9022f0666720eca5831c8a6113c8416f6.png" title=" Sebastian waits the Products are visible until be Enabled" width="1920"/>
+                <img src="336892c25d70fdbc6232d5568127dc547a5ff7e1d35d759ff8a1e55ce3bfbf1d.png" title=" Sebastian waits the Products are visible until be Enabled (completed)" width="1920"/>
+                <img src="acec3a3b54f94cce4acfbbf330c5a5233080fd1a7bef13c9591ef4db079b6e08.png" title=" Then validate shop car (completed)" width="1920"/>
+                <img src="acec3a3b54f94cce4acfbbf330c5a5233080fd1a7bef13c9591ef4db079b6e08.png" title=" Then the user can see the products on the shop car page (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.2.1</span>
+</div>
+</body>
+</html>
